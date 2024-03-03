@@ -1,0 +1,93 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-img-left img {
+    width: 500px; /* Adjust based on your image's aspect ratio */
+    height: auto;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.description {
+    max-width: 400px; /* Adjust based on your preference */
+}
+
+    .description h2 {
+        margin-top: 0;
+        color: #333; /* Dark grey text color */
+    }
+
+    .description p {
+        color: #666; /* Lighter grey text color */
+    }
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .text-md-start {
+        text-align: left;
+    }
+}
+
+.btn-primary {
+    background-color: #4CAF50; /* Green */
+    border-color: #4CAF50;
+}
+
+    .btn-primary:hover {
+        background-color: #45a049;
+        border-color: #3e8e41;
+    }
+
+.explore btn {
+    background-color: #4CAF50;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.my-button:hover {
+    background-color: #45a049;
+}
+
+.custom-image {
+    height: 150px;
+    width: 200px;
+}
