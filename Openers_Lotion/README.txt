@@ -25,6 +25,9 @@ Then, I made the Home page image in Canva app and updated the Home page.
 Then, I added the following fields to the database solution: Name, Type, Price, and Review.
 I then created Create, Read, Update, and Delete pages for the lotion model by adding NuGet packages to the scaffolding tool.
 Then I added Migration and updated the database.
+There was error while running this one 
+Add-Migration -Context Openers_LotionContext
+Update Database -Context Openers_LotionContext
 After that, I pressed view design and expressed SQL Server in LocalDB. It was successfully displayed.
 I updated the README.txt file with my work.
 When the task was over, I used GitHub to send the project to Sreekanth for the remaining parts.
@@ -32,6 +35,7 @@ When the task was over, I used GitHub to send the project to Sreekanth for the r
 
 2024-02-19
 1234
+Sreekanth Padinjareppatt Sethumadhavan
 At first, I examined the project parts that Foram had finished.
 Next, I made a new class in the Models folder called SeedData and used it to seed the database.
 Next, I changed the code in the program.cs file to add the seed initializer.
@@ -46,6 +50,7 @@ When the task was over, I used GitHub to send the project to Jaspreet for the re
 
 2024-02-20
 1845
+Jaspreeth
 Firstly, I examined the project parts that were finished by Foram and Sreekanth.
 Next, I added a search method in the model folder's LotionViewModel class.
 Next, I changed the LotionsController.cs Index method code.
@@ -59,3 +64,10 @@ After the assignment was completed, I sent the project to Foram and Sreekanth fo
 2024-02-21
 1422
 Finally, we examined our Lotion product web application together and saw that it was operating successfully and made the necessary changes.
+
+2024-03-03
+1400
+Changed the parameters and added more (Product Name, Item Form, Skin Type, Quantity, Description, Price, Review ). 
+Occured error while running
+Deleted database and builded new database with same steps other team members followed
+Changed LotionViewModel to LotionTypeViewModel
