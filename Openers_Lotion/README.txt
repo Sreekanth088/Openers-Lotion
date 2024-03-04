@@ -65,8 +65,9 @@ After the assignment was completed, I sent the project to Foram and Sreekanth fo
 1422
 Finally, we examined our Lotion product web application together and saw that it was operating successfully and made the necessary changes.
 
-2024-03-03
+2024-02-29
 1400
+Sreekanth
 Changed the parameters and added more (Product Name, Item Form, Skin Type, Quantity, Description, Price, Review ). 
 Occured error while running
 Deleted database and builded new database with same steps other team members followed
