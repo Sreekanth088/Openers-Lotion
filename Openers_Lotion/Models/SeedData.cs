@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.DependencyInjection;
 using Openers_Lotion.Data;
 using System;
@@ -13,6 +14,18 @@ public static class SeedData
         using var context = new Openers_LotionContext(
             serviceProvider.GetRequiredService<
                 DbContextOptions<Openers_LotionContext>>());
+        protected override void Up(MigrationBuilder migrationBuilder)
+    {
+        migrationBuilder.AlterColumn<string>(
+            name: "Description",
+            table: "Lotion",
+            maxLength: 500, // or whatever length you need
+            nullable: false,
+            oldClrType: typeof(string),
+            oldType: "nvarchar(max)",
+            oldNullable: true);
+    }
+
         // Look for any movies.
         if (context.Lotion.Any())
         {
