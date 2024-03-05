@@ -57,7 +57,7 @@ Next, I changed the LotionsController.cs Index method code.
 I then updated the search method's index view.
 After that, when I ran the project, it displayed the results with the correct data.
 Then I added the validation method in Lotion class.
-Then I examined the details and deleted the method.
+Then I examined the details and deleted the method. 
 I updated the README.txt file with my work.
 After the assignment was completed, I sent the project to Foram and Sreekanth for review via GitHub. 
 
