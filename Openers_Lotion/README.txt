@@ -71,4 +71,4 @@ Sreekanth
 Changed the parameters and added more (Product Name, Item Form, Skin Type, Quantity, Description, Price, Review ). 
 Occured error while running
 Deleted database and builded new database with same steps other team members followed
-Changed LotionViewModel to LotionTypeViewModel
+Changed LotionViewModel to LotionTypeViewModel 
