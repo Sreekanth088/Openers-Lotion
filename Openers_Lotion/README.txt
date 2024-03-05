@@ -52,7 +52,7 @@ When the task was over, I used GitHub to send the project to Jaspreet for the re
 1845
 Jaspreeth
 Firstly, I examined the project parts that were finished by Foram and Sreekanth.
-Next, I added a search method in the model folder's LotionViewModel class.
+Next, I added a search method in the model folder's LotionViewModel class. 
 Next, I changed the LotionsController.cs Index method code.
 I then updated the search method's index view.
 After that, when I ran the project, it displayed the results with the correct data.
