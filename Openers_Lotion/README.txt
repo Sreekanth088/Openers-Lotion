@@ -72,3 +72,10 @@ Changed the parameters and added more (Product Name, Item Form, Skin Type, Quant
 Occured error while running
 Deleted database and builded new database with same steps other team members followed
 Changed LotionViewModel to LotionTypeViewModel 
+
+
+2024-03-07
+1025
+Foram
+I updated the login code.
+The Login is successful.
