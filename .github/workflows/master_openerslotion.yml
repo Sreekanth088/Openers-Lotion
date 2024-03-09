@@ -14,7 +14,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/setup-node@v3  # Replace v3 with the latest stable version
       - uses: actions/checkout@v4
 
       - name: Set up .NET Core
@@ -46,16 +45,16 @@ jobs:
 
     steps:
       - name: Download artifact from build job
-        uses: actions/download-artifact@v4  # Assuming v4 is compatible with Node.js 20
+        uses: actions/download-artifact@v3
         with:
           name: .net-app
       
       - name: Login to Azure
-        uses: azure/login@v2  # Assuming v2 is compatible with Node.js 20
+        uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_58F49A3376A24EC692836E544F284A1F }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_E729BF19899C4B32809752556F1F0712 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_38C60B564E2246058DCDD0A6C2BEE64F }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_73EFBFA16BFF4103A3CCDBBCC0CEE9FC }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_5CBBBA4DBD0B454DAC5AF7683681ED93 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D64A4E50477D4395B0428DAAEDB0D564 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
