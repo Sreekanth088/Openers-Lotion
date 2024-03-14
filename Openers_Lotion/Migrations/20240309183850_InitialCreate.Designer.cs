@@ -12,7 +12,7 @@ using Openers_Lotion.Data;
 namespace Openers_Lotion.Migrations
 {
     [DbContext(typeof(Openers_LotionContext))]
-    [Migration("20240229135828_InitialCreate")]
+    [Migration("20240309183850_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -34,9 +34,8 @@ namespace Openers_Lotion.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<string>("ItemForm")
                         .IsRequired()
@@ -55,7 +54,7 @@ namespace Openers_Lotion.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal?>("Review")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18, 2)");
 
                     b.Property<string>("SkinType")
                         .IsRequired()

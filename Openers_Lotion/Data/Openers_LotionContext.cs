@@ -11,4 +11,5 @@ namespace Openers_Lotion.Data
     {
         public DbSet<Openers_Lotion.Models.Lotion> Lotion { get; set; } = default!;
     }
+
 }
