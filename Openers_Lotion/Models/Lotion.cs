@@ -24,13 +24,13 @@ namespace Openers_Lotion.Models
         [Display(Name = "Quantity (mL)")]
         public int? Quantity { get; set;}
         [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
-        [Required]
-        [StringLength(150)]
+        [StringLength(1000)]
         public string? Description { get; set; }
         [Range(1, 100)]
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal? Review { get; set; }
     }
 }

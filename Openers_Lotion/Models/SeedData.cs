@@ -18,7 +18,7 @@ public static class SeedData
         // Look for any movies.
         if (context.Lotion.Any())
         {
-            return;   // DB has been seeded
+            return;
         }
         context.Lotion.AddRange(
             new Lotion

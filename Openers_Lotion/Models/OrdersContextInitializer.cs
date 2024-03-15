@@ -5,7 +5,7 @@
     using System.Collections.Generic;
     using System.Data.Entity;
 
-    public class OrdersContextInitializer : DropCreateDatabaseIfModelChanges<OrdersContext>
+    public class DropCreateDatabaseIfModelChanges<OrdersContext>
     {
         protected override void Seed(OrdersContext context)
         {

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Openers_Lotion.Data;
 using Microsoft.Extensions.DependencyInjection;
 using Openers_Lotion.Models;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<Openers_LotionContext>(options =>
@@ -10,8 +11,9 @@ builder.Services.AddDbContext<Openers_LotionContext>(options =>
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
+//builder.Services.AddDbContext<ApplicationDbContext>(options =>
+//  options.UseSqlServer(connectionString));
+builder.Services.AddDbContextPool<ApplicationDbContext>(Options => Options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)

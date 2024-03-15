@@ -20,7 +20,7 @@ namespace Openers_Lotion.Migrations
                     ItemForm = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     SkinType = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: true),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Review = table.Column<decimal>(type: "decimal(18,2)", nullable: true)
                 },
