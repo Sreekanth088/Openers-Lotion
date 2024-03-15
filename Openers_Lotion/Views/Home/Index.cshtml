@@ -1,4 +1,8 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -14,3 +18,11 @@
         </div>
     </div>
 </div>
+
+@if (User.IsInRole("Admin"))
+{
+    <h1>Hi Admin</h1>
+} else
+{
+    
+}
