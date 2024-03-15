@@ -11,9 +11,7 @@
         {
             var products = new List<Product>()
             {
-                new Product() { Name = "Tomato Soup", Price = 1.39M, ActualCost = .99M },
-                new Product() { Name = "Hammer", Price = 16.99M, ActualCost = 10 },
-                new Product() { Name = "Yo yo", Price = 6.99M, ActualCost = 2.05M }
+               
             };
 
             products.ForEach(p => context.Products.Add(p));
