@@ -104,7 +104,7 @@ Updated the README.
 jaspreet singh
 created the file named Admin.cshtml in views/home.
 added the html code in same file which defined the structure of the page.
-opened the _Layout.cshtml file and updated the code.
+opened the _Layout.cshtml file and updated the code. 
 Ran the application and everything is working.
 updated the readme file.
 
