@@ -98,6 +98,12 @@ Created contoller for Admin.
 Added the databse intitilizer for Admin databse.
 Updated the README.
 
+Edited the admin details.
+Admin Username: rohadmin@hotmail.com
+Admin Password: yd4exwlt8r7&E#Y78Y&*dg8
+Guest Username: rohguest@hotmail.com
+Guest Password: V*7f8&Y*d47IEUH*Eu9wi09
+
 
 2024-03-15
 0622
