@@ -80,6 +80,14 @@ Foram
 I updated the login code.
 The Login is successful.
 
+2024-03-08
+0236
+jaspreet
+rebuild the database with every group member.
+updated the datalist.
+added the lotion pic and resized it according to the need.
+updated the readme file.
+
 
 2024-03-15
 0525
@@ -89,3 +97,15 @@ Added the Forign key.
 Created contoller for Admin.
 Added the databse intitilizer for Admin databse.
 Updated the README.
+
+
+2024-03-15
+0622
+jaspreet singh
+created the file named Admin.cshtml in views/home.
+added the html code in same file which defined the structure of the page.
+opened the _Layout.cshtml file and updated the code.
+Ran the application and everything is working.
+updated the readme file.
+
+
