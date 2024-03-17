@@ -14,7 +14,10 @@
         <div class="col-md-6 text-center text-md-start">
             <h2>We Care About Your Skin</h2>
             <p>It's a Perfect Start for your Skin Care. The product collections are designed with your skin's health in mind. From Body lotions to hydrating moisturizers, find everything you need to begin your journey towards a radiant complexion.</p>
+        @if(User.IsInRole ("Administrator") )
+            {
             <a class="btn btn-primary" asp-area="" asp-controller="Lotions" asp-action="Index">Explore</a>
+            }
         </div>
     </div>
 </div>

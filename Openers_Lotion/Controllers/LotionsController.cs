@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Openers_Lotion.Data;
 using Openers_Lotion.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Openers_Lotion.Controllers
 {
@@ -15,6 +16,7 @@ namespace Openers_Lotion.Controllers
         private readonly Openers_LotionContext _context = context;
 
         // GET: Lotions
+        [Authorize]
         public async Task<IActionResult> Index(string lotionType, string searchString)
         {
             if (_context.Lotion == null)
@@ -49,6 +51,7 @@ namespace Openers_Lotion.Controllers
         }
 
         // GET: Lotions/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -67,6 +70,7 @@ namespace Openers_Lotion.Controllers
         }
 
         // GET: Lotions/Create
+        [Authorize (Roles = "Administrator") ]
         public IActionResult Create()
         {
             return View();
@@ -89,6 +93,7 @@ namespace Openers_Lotion.Controllers
         }
 
         // GET: Lotions/Edit/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -105,6 +110,7 @@ namespace Openers_Lotion.Controllers
         }
 
         // POST: Lotions/Edit/5
+        [Authorize(Roles = "Administrator")]
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -140,6 +146,7 @@ namespace Openers_Lotion.Controllers
         }
 
         // GET: Lotions/Delete/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -158,6 +165,7 @@ namespace Openers_Lotion.Controllers
         }
 
         // POST: Lotions/Delete/5
+        [Authorize(Roles = "Administrator")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
