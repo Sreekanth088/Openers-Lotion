@@ -17,7 +17,7 @@ namespace Openers_Lotion.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "8.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -60,7 +60,7 @@ namespace Openers_Lotion.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Lotion", (string)null);
+                    b.ToTable("Lotion");
                 });
 #pragma warning restore 612, 618
         }
